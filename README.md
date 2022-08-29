@@ -1,3 +1,11 @@
+This is update on existing for on latest update according android and crodva
+
+Update below three lines on android build.gradle file
+
+implementation 'androidx.lifecycle:lifecycle-runtime:2.2.0'
+implementation 'com.facebook.android:audience-network-sdk:6.+'
+implementation 'androidx.annotation:annotation:1.1.0'
+
 ## Cordova Facebook Audience Network Free
 
 This Plugin uses the lastest version of `Facebook Audience Network` SDKs for Android and iOS
