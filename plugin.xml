@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-fbanfree"
+	version="0.0.8"
+	xmlns="http://apache.org/cordova/ns/plugins/1.0"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<name>FBANFree</name>
+	<description>Cordova Facebook Audience Network Free Plugin</description>
+	<license>MIT</license>
+	<keywords>cordova,facebookaudiencenetworkfree, facebook ad, audience network,
+		cordova-ios, cordova-android, ecosystem:cordova, android, ios,
+        money, monetization, iad, services, play, earn, publicity, advertisment, advertising,
+        ads, ad
+	</keywords>
+	<js-module name="FBANFree" src="www/FBANFree.js">
+		<clobbers target="fbanfree" />
+	</js-module>
+
+	<engines>
+        <engine name="cordova" version=">=7.0.0" />
+        <engine name="cordova-android" version=">=6.0.0" />
+    </engines>
+    
+	<dependency id="cordova-plugin-cocoapod-support"/>
+	<platform name="ios">
+		<config-file target="config.xml" parent="/*" >
+			<feature name="FBANFree">
+				<param name="ios-package" value="FBANPlugin" />
+			</feature>
+		</config-file>
+
+		<header-file src="src/ios/FBANPlugin-Bridging-Header.h" />
+
+		<source-file src="src/ios/FBANBase.swift" />
+		<source-file src="src/ios/FBANBanner.swift" />
+		<source-file src="src/ios/FBANPlugin.swift" />
+		<source-file src="src/ios/FBANInterstitial.swift" />
+		<source-file src="src/ios/FBANRewardVideo.swift" />
+		<source-file src="src/ios/FBANConstants.swift" />
+		<source-file src="src/ios/FBANNative.swift" />
+		<source-file src="src/ios/FBANNativeBanner.swift" />
+
+		<dependency id="cordova-plugin-add-swift-support" version="^2.0.2"/>
+		<pod name="FBAudienceNetwork" spec="~> 5.3.1" />
+	</platform>
+	<platform name="android">
+		<preference name="ANDROID_SUPPORT_RECYCLERVIEW_VERSION" default="27+" />
+		<config-file parent="/*" target="res/xml/config.xml">
+			<feature name="FBANFree">
+				<param name="android-package" value="fban.plugin.FBANFree" />
+			</feature>
+		</config-file>
+		<config-file target="AndroidManifest.xml" parent="/manifest/application">
+			<meta-data
+                android:name="com.facebook.android.ads.fban"
+                android:value="fban" />
+		</config-file>
+
+		<framework src="com.android.support:recyclerview-v7:$ANDROID_SUPPORT_RECYCLERVIEW_VERSION" />
+		<framework src="com.facebook.android:audience-network-sdk:6.+" />
+
+        <source-file src="src/android/Actions.java" target-dir="src/fban/plugin" />
+        <source-file src="src/android/Action.java" target-dir="src/fban/plugin" />
+        <source-file src="src/android/Events.java" target-dir="src/fban/plugin" />
+		<source-file src="src/android/FBANFree.java" target-dir="src/fban/plugin" />
+		<source-file src="src/android/ads/AdBase.java" target-dir="src/fban/plugin/ads" />
+		<source-file src="src/android/ads/BannerAd.java" target-dir="src/fban/plugin/ads" />
+		<source-file src="src/android/ads/FBNativeAd.java" target-dir="src/fban/plugin/ads" />
+		<source-file src="src/android/ads/FBInterstitialAd.java" target-dir="src/fban/plugin/ads" />
+		<source-file src="src/android/ads/FBRewardVideo.java" target-dir="src/fban/plugin/ads" />
+	</platform>
+</plugin>

@@ -1,0 +1,72 @@
+{
+  "_from": "cordova-plugin-fbanfree",
+  "_id": "cordova-plugin-fbanfree@0.0.8",
+  "_inBundle": false,
+  "_integrity": "sha512-kF0ZkYbVGMyAUjDeo3ztwQnxf6HI9bkiT5T/VL+Eva5b9s3kSRf5PAG/Duv7niR/yGYSfBvU2T5Upwa5/65P0w==",
+  "_location": "/cordova-plugin-fbanfree",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-fbanfree",
+    "name": "cordova-plugin-fbanfree",
+    "escapedName": "cordova-plugin-fbanfree",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-fbanfree/-/cordova-plugin-fbanfree-0.0.8.tgz",
+  "_shasum": "5fef01452a0d605e6cb00994950ac45125d8c25e",
+  "_spec": "cordova-plugin-fbanfree",
+  "_where": "E:\\hw18\\coin\\homework18cordova",
+  "author": {
+    "name": "Wichanan Thian"
+  },
+  "bugs": {
+    "url": "https://github.com/wichanan/cordova-plugin-fbanfree/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-fbanfree",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova Facebook Audience Network Free Plugin",
+  "devDependencies": {
+    "cordova": "^9.0.0"
+  },
+  "files": [
+    "*.ts",
+    "*.md",
+    "*.xml",
+    "src",
+    "ts",
+    "www"
+  ],
+  "homepage": "https://github.com/wichanan/cordova-plugin-fbanfree#readme",
+  "keywords": [
+    "cordova",
+    "facebookaudiencenetworkfree",
+    "facebook ad",
+    "audience network",
+    "ecosystem:cordova",
+    "cordova-facebook-audience-network",
+    "cordova-facebook-audience-network-free",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "license": "MIT",
+  "name": "cordova-plugin-fbanfree",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wichanan/cordova-plugin-fbanfree.git"
+  },
+  "version": "0.0.8"
+}
